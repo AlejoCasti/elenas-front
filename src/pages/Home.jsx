@@ -137,11 +137,6 @@ function Home() {
     setCurrentPage(page)
   }
 
-  async function searchTask(e) {
-    setCurrentSearch(e.target.value)
-    await getTasks()
-  }
-
   useEffect(() => {
     getTasks()
   }, [currentSearch, currentPage])
@@ -166,7 +161,7 @@ function Home() {
               <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                 <i className='material-icons search-icon'>search</i>
               </div>
-              <input type="text" className="search-bar text-sm rounded-lg w-full pl-10 p-2.5" placeholder="Busca por descripción" onChange={searchTask}/>
+              <input type="text" className="search-bar text-sm rounded-lg w-full pl-10 p-2.5" placeholder="Busca por descripción" onChange={(e) => {setCurrentSearch(e.target.value)}}/>
             </div>
             <div className='tasks'>
               {tasks ? tasks.results.map(task => {
