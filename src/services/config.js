@@ -2,7 +2,7 @@ import axios from 'axios'
 import dayjs from 'dayjs'
 import jwtDecode from 'jwt-decode'
 
-const baseURL = 'http://localhost:8000/api'
+const baseURL = import.meta.env.VITE_API_BASE_URL
 
 const apiConnection = axios.create({
   baseURL
