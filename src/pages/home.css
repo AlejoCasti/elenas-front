@@ -1,0 +1,90 @@
+.home {
+  display: flex;
+  justify-content: center;
+  background-color: #521ece;
+  padding: 20px 10px;
+  height: 92vh;
+}
+
+.home-title {
+  color: #521ece;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.home-card {
+  width: 80vw;
+  border-radius: 5px;
+  padding: 30px 20px;
+  background-color: white;
+  max-height: 700px;
+  overflow: auto;
+}
+
+.float-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 20px;
+	background-color: white;
+	border-radius: 50px;
+  cursor: pointer;
+}
+
+.float-icon{
+  color: #521ece;
+  font-size: 35px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-icon {
+  color: #521ece;
+}
+
+.task-title {
+  color: #521ece;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.task-description {
+  color: #999999;
+}
+
+.search-icon {
+  color: #cccccc;
+}
+
+.search-bar {
+  border: 1px solid #cccccc;
+}
+
+@media (max-width: 769px) {
+  .home-card {
+    width: 90vw;
+    padding: 30px 10px 10px;
+    max-height: 90vh;
+  }
+
+  .float-button{
+    background-color: #521ece;
+    right: 40px;
+  }
+  
+  .float-icon{
+    color: white;
+  }
+}

@@ -1,0 +1,48 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #521ece;
+}
+
+.card {
+  display: flex;
+  width: 80vw;
+  border-radius: 5px;
+  padding: 30px 0px;
+  background-color: white;
+  min-height: 500px;
+}
+
+.icon-container {
+  border-right: 3px solid #521ece;
+}
+
+.input-login-form {
+  padding: 10px !important;
+  border-radius: 3px;
+  width: 250px;
+  max-width: 300px;
+}
+
+.username .password {
+  border: 1px solid #27292a;
+}
+
+.title {
+  color: #521ece;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 769px) {
+  .card {
+    width: 90vw;
+    padding: 10px;
+  }
+
+  input {
+    width: 100%;
+  }
+}

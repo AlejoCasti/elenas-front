@@ -1,0 +1,18 @@
+.task-form-title {
+  width: 100%;
+  padding: 10px !important;
+  border-radius: 3px;
+}
+
+.task-form-description {
+  width: 100%;
+  padding: 10px !important;
+  border-radius: 3px;
+  max-height: 300px;
+  min-height: 100px;
+}
+
+.task-form-label {
+  font-weight: bold;
+  font-size: 1rem;
+}
