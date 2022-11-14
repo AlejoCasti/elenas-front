@@ -33,8 +33,8 @@ function Login() {
   async function signupUser(e) {
     e.preventDefault()
 
-    const username = e.target['login-username'].value
-    const password = e.target['login-password'].value
+    const username = e.target['signup-username'].value
+    const password = e.target['signup-password'].value
 
     if (!username || !password) {
       setError('Recuerda llenar los campos')
